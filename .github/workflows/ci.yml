@@ -33,11 +33,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-<<<<<<< HEAD
-        python: ['3.8', '3.9', '3.10', '3.11-dev']
-=======
         python: ['3.8', '3.9', '3.10', '3.11', '3.12', '3.13']
->>>>>>> origin
         check_formatting: ['0']
         extra_name: ['']
         include:
@@ -68,11 +64,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-<<<<<<< HEAD
-        python: ['3.8', '3.9', '3.10']
-=======
         python: ['3.8', '3.9', '3.10', '3.11', '3.12']
->>>>>>> origin
     steps:
       - name: Checkout
         uses: actions/checkout@v4
